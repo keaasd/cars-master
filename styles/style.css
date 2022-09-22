@@ -206,7 +206,9 @@ body {
     left: 401px;
     bottom: 0;
 }
-
+.price .button {
+    width: 100%;
+}
 .footer {
 
     padding: 36px 0;
