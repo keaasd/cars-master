@@ -97,36 +97,123 @@ body {
     width: 334px;
     height: 64px;
     background: #030305;
-    border: 1px solid transparent;
+    border: 0;
     cursor: pointer;
-}
-
-.button:hover {
-    color: #030305;
-    background: #FFFFFF;
-    border-color: #030305;
     transition: .3s;
 }
 
+.button:hover {
+    background: #5D5D5F;
+}
+
 .car-items {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 3;
-/* flex-wrap: wrap; */
-gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding-top: 40px;
+    gap: 24px;
 }
+
 .car-item {
-transition: .3s;
+    transition: .3s;
+    max-width: 384px;
+    text-align: center;
 }
+
+.car-item img {
+    vertical-align: bottom;
+    margin-bottom: 11px;
+}
+
+.car-item button {
+    width: 100%;
+    height: 54px;
+}
+
 .car-item:hover {
-box-shadow: 0 0 1px 2px #030305;
+    box-shadow: 0 0 0 1px #5D5D5F;
 }
+
 .car-item-info {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 40px 15px;
+}
+
+.cub-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 116.6%;
+    padding-top: 20px;
+    margin-top: 80px;
+
+}
+
+.car-item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    padding: 15px 0 17px 0;
+
+}
+
+.car-item-point {
+    width: 110px;
+    margin-bottom: 13px;
+}
+
+.car-item-point div:nth-child(2) {
+    font-weight: 700;
+
+}
+
+.price-form {
+    max-width: 344px;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
 }
-.car-item-image img {
-    max-width: 384px;
-    /* d */
+
+.price-form input {
+    padding: 22px 18px;
+    background: #FFFFFF;
+    border: 1px solid #5D5D5F;
+    font-size: 16px;
+}
+
+.price-text {
+    font-size: 16px;
+    line-height: 130%;
+    color: #5D5D5F;
+    padding: 20px 0 60px 0;
+}
+
+.price .container {
+    position: relative;
+    padding-bottom: 121px;
+}
+
+.price {
+    overflow: hidden;
+}
+
+.price-image {
+    max-width: 969px;
+    position: absolute;
+    left: 401px;
+    bottom: 0;
+}
+
+.footer {
+
+    padding: 36px 0;
+    border-top: 1px solid #030305;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
 }
