@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, serif;
+    color: #030305;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/RobotoBold.ttf');
+    font-weight: bold;
+}
+
+.header {
+    border-bottom: 1px solid #E5E5E5;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 113px;
+}
+
+.logo img {
+    vertical-align: bottom;
+}
+
+.menu {
+    margin-left: 244px;
+}
+
+.menu ul {
+    gap: 115px;
+    display: flex;
+    list-style: none;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-size: 15px;
+    color: #030305;
+}
+
+.menu-link:hover {
+    border-bottom: 1px solid #030305;
+    transition: .3s;
+}
+
+.main {
+    background-image: url('../images/background.png');
+    background-position: center;
+    background-size: cover;
+    padding: 105px 0 154px 0;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 110%;
+    max-width: 855px;
+    margin-bottom: 40px;
+}
+
+.main-text {
+    font-size: 16px;
+    line-height: 130%;
+    max-width: 502px;
+    margin-bottom: 40px;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 334px;
+    height: 64px;
+    background: #030305;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #030305;
+    background: #FFFFFF;
+    border-color: #030305;
+    transition: .3s;
+}
+
+.car-items {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 3;
+/* flex-wrap: wrap; */
+gap: 24px;
+}
+.car-item {
+transition: .3s;
+}
+.car-item:hover {
+box-shadow: 0 0 1px 2px #030305;
+}
+.car-item-info {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.car-item-image img {
+    max-width: 384px;
+    /* d */
+}
