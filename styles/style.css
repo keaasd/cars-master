@@ -123,8 +123,11 @@ body {
 .car-item img {
     vertical-align: bottom;
     margin-bottom: 11px;
+    transition: all .3s;
 }
-
+.car-item:hover img {
+    transform: scale(1.1);
+}
 .car-item button {
     width: 100%;
     height: 54px;
